@@ -1,8 +1,14 @@
-FROM node:20-alpine
-WORKDIR /app
-COPY package.json package-lock.json* ./
-RUN npm install --production
+FROM node:24
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+RUN npm rebuild sqlite3
+
 COPY . .
-ENV PORT=8080
+
 EXPOSE 8080
+
 CMD ["npm", "start"]

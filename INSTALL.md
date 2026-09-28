@@ -1,6 +1,13 @@
-# Installing Media Downloader on Pi SoloHost
+# Installation Guide
 
-1. Ensure Docker and Docker Compose are installed.
-2. Place `docker-compose.yml` and `config_options.yml` in your app directory.
-3. Run `docker compose up -d` to start the application.
-4. Access the UI on the configured local port.
+## Prerequisites
+
+- Docker
+- Docker Compose
+
+## Steps
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Run `docker-compose up -d`
+4. Access the application at `http://localhost:18080`

@@ -5,7 +5,7 @@ Use the two install files:
 - config_options.yml
 
 Suggested name: Media Downloader
-Suggested description: tạo cho tôi app : Media Downloader ứng dụng quản lý tải xuống các nội dung được phép tải, lưu file và theo dõi tiến trình.
+Suggested description: tạo cho tôi app: Media Downloader ứng dụng quản lý tải xuống các nội dung được phép tải, lưu file và theo dõi tiến trình.
 
 Image:
 paf-app:media-downloader

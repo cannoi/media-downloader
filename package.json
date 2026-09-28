@@ -1,14 +1,21 @@
 {
   "name": "media-downloader",
   "version": "1.0.0",
-  "description": "A local server-based download manager for content the user is authorized to download.",
+  "description": "Media Downloader là một ứng dụng quản lý tải xuống các nội dung được phép tải, lưu file và theo dõi tiến trình.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "node test.js"
+    "test": "node tests/test.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "sqlite3": "^5.1.7"
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.2",
+    "axios": "^0.21.1",
+    "ytdl-core": "^4.9.1",
+    "chai-http": "*"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.3",
+    "chai": "^4.3.4"
   }
 }
