@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Downloader</title>
+  <link rel="stylesheet" href="style.css">
+<style>.paf-made-by{position:fixed;right:8px;bottom:8px;width:min(72px,12vw);max-width:12vw;height:auto;object-fit:contain;opacity:.5;background:transparent;padding:0;border:0;box-shadow:none;filter:none;pointer-events:none;z-index:30}</style></head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Media Downloader</h1>
+      <button id="themeToggle" class="btn-secondary">Toggle Dark Mode</button>
+    </header>
+
+    <section class="card add-card">
+      <h2>Add New Download</h2>
+      <form id="downloadForm">
+        <div class="form-group">
+          <label for="source_url">Direct Media URL (HTTP/HTTPS):</label>
+          <input type="url" id="source_url" placeholder="https://example.com/file.mp4" required>
+        </div>
+        <div class="form-group">
+          <label for="category">Category:</label>
+          <select id="category">
+            <option value="Video">Video</option>
+            <option value="Audio">Audio</option>
+            <option value="Documents">Documents</option>
+            <option value="Images">Images</option>
+            <option value="General">General</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary">Start Download</button>
+      </form>
+    </section>
+
+    <section class="card list-card">
+      <h2>Download Tasks & History</h2>
+      <div class="table-responsive">
+        <table id="tasksTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Progress</th>
+              <th>Speed</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tasksBody">
+            <!-- dynamic tasks -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <footer class="paf-made-by">
+    Made with App Builder — Pi SoloHost
+  </footer>
+
+  <script src="app.js"></script>
+<img class="paf-made-by" src="/made-by.png" alt="Made with App Builder — Pi SoloHost"></body>
+</html>

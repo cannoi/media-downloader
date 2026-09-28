@@ -1,0 +1,14 @@
+{
+  "name": "media-downloader",
+  "version": "1.0.0",
+  "description": "A local server-based download manager for content the user is authorized to download.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
